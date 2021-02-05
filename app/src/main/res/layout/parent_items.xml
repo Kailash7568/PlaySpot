@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/side"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Side"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:textSize="28sp"/>
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="10dp"
+            android:text="1400"
+            android:textStyle="bold"
+            android:textColor="#5EC662"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Morning"
+            android:textColor="#697E9B"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChild1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Afternoon"
+            android:textColor="#697E9B"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChild2"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Evening"
+            android:textColor="#697E9B"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvChild3"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/keep_bg"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/otptext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:hint="Enter OTP"
+        android:inputType="phone" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Verify OTP"
+        android:visibility="gone"
+        android:id="@+id/verifyotp"
+        android:layout_margin="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rect_bg"
+        android:padding="10dp" >
+
+        <GridLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:id="@+id/grid"
+            android:background="@drawable/edit_txt_bg"
+            android:columnCount="2"
+            android:layout_height="60dp">
+
+            <EditText
+                android:id="@+id/phonetext"
+                android:background="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="7dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="7dp"
+                android:paddingTop="7dp"
+                android:layout_marginStart="15dp"
+                android:ems="10"
+                android:textColor="#000"
+                android:layout_margin="10dp"
+                android:textColorHint="#C8C0C0"
+                android:hint="Enter Phone no with country code"
+                android:inputType="phone" />
+
+            <Button
+                android:id="@+id/sendotp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="end"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:drawableEnd="@drawable/arrow"
+                android:background="@drawable/button_bg"
+                android:paddingRight="20dp" />
+
+
+        </GridLayout>
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grid"
+            android:textColor="#fff"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:text="By creating account, I agree to DOJO's Terms and Conditions and Privacy Policy"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
