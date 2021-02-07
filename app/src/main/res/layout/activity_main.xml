@@ -9,7 +9,7 @@
     android:padding="10dp"
     android:orientation="vertical">
 
-    <EditText
+    <com.chaos.view.PinView
         android:id="@+id/otptext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,6 +25,21 @@
         android:visibility="gone"
         android:id="@+id/verifyotp"
         android:layout_margin="5dp"/>
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:itemCount="4"
+        android:textSize="18sp"
+        style="@style/PinWidget.PinView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="550dp"
+        android:layout_below="@id/verifyotp"
+        app:itemRadius="4dp"
+        android:inputType="number"
+        android:cursorVisible="true"
+        app:itemHeight="48dp"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -75,6 +90,7 @@
                 android:paddingRight="20dp" />
 
 
+
         </GridLayout>
 
         <TextView
@@ -86,6 +102,7 @@
             android:layout_marginTop="25dp"
             android:text="By creating account, I agree to DOJO's Terms and Conditions and Privacy Policy"
             android:textSize="15sp" />
+
 
     </RelativeLayout>
 
